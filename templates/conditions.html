@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <!------
+        <h1>CONDITIONS STATEMENTS</h1>
+        <h1>VALUE OF A IS {{a}}</h1>
+        <h1>VALUE OF B IS {{b}}</h1>
+        {% if a > b %}
+            <h1>{{a}} is higher than {{b}}</h1>
+        {% else %}
+            <h1>{{b}} is higher than {{a}}</h1>
+        {% endif %}
+       
+
+
+
+    <h1> IF ELSE STATEMENTS</h1>
+    <h1> Value of a is {{a}}</h1>
+    <h1> Value of b is {{b}}</h1>
+    <h1> Value of c is {{c}}</h1>
+    {% if a > b and a > c %}
+            <h1> {{a}} is  highest </h1>
+    {% elif b > c %}
+            <h1> {{b}} is highest </h1>
+    {% else %}
+            <h1> {{c}} is highest </h1>
+    {% endif %}
+
+     -->
+     
+
+    <h1> NESTED IF STATEMENTS</h1>
+    <h1> Value of a is {{a}}</h1>
+    <h1> Value of b is {{b}}</h1>
+    <h1> Value of c is {{c}}</h1>
+    {% if a > b %}
+            {% if a > c %}
+                <h1>{{a}} is highest</h1>
+            {% else %}
+                 <h1>{{c}} is highest</h1>
+            {% endif %}
+
+    {% else %}
+            {% if b > c %}
+                     <h1>{{b}} is highest</h1>
+            {% else %}
+                     <h1>{{c}} is highest</h1>
+            {% endif %}
+            
+    {% endif %}
+                  
+
+    </center>
+</body>
+</html>
